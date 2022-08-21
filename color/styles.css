@@ -1,0 +1,43 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #51c3bb;
+  color: #fff;
+  /* background: #246EE9; */
+}
+main {
+  /* background: #475FCB;
+background: #FF2400; */
+}
+h1{
+    margin-top: 0;
+}
+footer {
+  background: #3d1546;
+  height: 100px;
+  /* background: #3EB489; */
+  color: #fff;
+}
+div {
+  background: #57acd3;
+  height: 100px;
+  color: white;
+}
+span {
+  background: #4c79b8;
+  display: block;
+  height: 100px;
+  color: #fff;
+}
+p {
+  background: #614fb5;
+  height: 100px;
+  color: white;
+  margin: 0;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>Let's make your plans work</title>
+    <link rel="styleSheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>Logo</div>
+      <ul class="homeLinks">
+        <li onclick="showCategoriesDropdown()">
+          Categoeies
+          <ul
+            id="categories"
+            class="displayNone dropdown"
+            onmouseleave="hideCategoriesDropdown()"
+          >
+            <li>Pizza</li>
+            <li>Trip</li>
+            <li>Birthday</li>
+            <li>Wedding</li>
+            <li>Burial</li>
+            <li>Naming</li>
+            <li>Baby Shower</li>
+          </ul>
+        </li>
+        <li onclick="showServicesDropdown()">
+          Services
+          <ul
+            id="services"
+            class="displayNone dropdown"
+            onmouseleave="hideServicesDropdown()"
+          >
+            <li>Event Planner</li>
+            <li>Hotels</li>
+            <li>Rides</li>
+            <li>Food</li>
+          </ul>
+        </li>
+        <li onclick="openModal('register')">Register</li>
+        <li onclick="openModal('login')">Login</li>
+      </ul>
+    </header>
+    <main>
+      <div class="banner">
+        <div>
+          <img src="./image//travel.svg" alt="travel" />
+        </div>
+        <div>
+          <h1>Travel round the world</h1>
+          <div>
+            Let's help you travel round the world with your budget intact
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1>Vacation in Paris 90</h1>
+        <div id="lysi" class=""></div>
+      </div>
+      <p>Para</p>
+    </main>
+    <footer><h1>Footer</h1></footer>
+    <div onclick="closeModal()" id="registerModal" class="modal displayNone">
+      <div class="heightRegister">
+        <div class="modalHeader">
+          <div>REGISTER</div>
+          <div onclick="closeModal()">Close</div>
+        </div>
+        <div class="register">
+          <div>
+            <img
+              id="registerImage"
+              src="./image/signin.svg"
+              alt="sign in"
+              width="100%"
+            />
+            <img
+              id="loginImage"
+              src="./image/login.svg"
+              alt="sign in"
+              width="100%"
+            />
+          </div>
+          <div id="registerForm">
+            <div>
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" placeholder="Surname" />
+            </div>
+            <div>
+              <label for="firstname">Firstname</label>
+              <input type="text" id="firstname" placeholder="Firstname" />
+            </div>
+            <div>
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Username" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="text" id="password" placeholder="Password" />
+            </div>
+            <div>
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="text"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div>
+              <button type="button">Register</button>
+              <div>
+                <span>Login</span>
+              </div>
+            </div>
+          </div>
+          <div id="loginForm">
+            <div>
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Username" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="text" id="password" placeholder="Password" />
+            </div>
+            <div>
+              <button type="button">Login</button>
+              <div>
+                <span>Register</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="functions.js"></script>
+  </body>
+</html>
